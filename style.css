@@ -28,6 +28,13 @@ body {
   margin-left: 40px;
 }
 
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  
+}
+
 .nav li {
   display: inline-block;
   margin: 0 30px;
@@ -38,11 +45,18 @@ body {
   color: white;
 }
 
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .aside {
   background-color: aquamarine;
   width: 30%;
   height: 90vh;
-  float: left;
+  order: 1;
+  flex-basis: 100px;
+  flex-grow: 1;
 }
 
 .aside-article {
@@ -56,5 +70,5 @@ body {
   background-color: yellow;
   width: 70%;
   height: 90vh;
-  float: right;
+  flex-grow: 1;
 }
